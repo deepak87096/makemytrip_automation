@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-09T00:03:42 IST" name="Suite" finished-at="2024-02-09T00:04:25 IST" duration-ms="42974">
+    <groups>
+      <group name="regression">
+        <method signature="TC_002_CabsResultTest.verifyCabsResult()[pri:2, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyCabsResult" class="testCases.TC_002_CabsResultTest"/>
+        <method signature="TC_003_GiftCardTest.verifyGiftCard()[pri:3, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyGiftCard" class="testCases.TC_003_GiftCardTest"/>
+        <method signature="TC_004_SendingGiftCardTest.verifyClickingOnEmail()[pri:4, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyClickingOnEmail" class="testCases.TC_004_SendingGiftCardTest"/>
+        <method signature="TC_005_HotelAdultsNumberTest.verifyClickOnHotels()[pri:7, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyClickOnHotels" class="testCases.TC_005_HotelAdultsNumberTest"/>
+        <method signature="TC_005_HotelAdultsNumberTest.verifyNoForAdults()[pri:8, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyNoForAdults" class="testCases.TC_005_HotelAdultsNumberTest"/>
+        <method signature="TC_001_SearchCabsTest.verifySearchCabs()[pri:1, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifySearchCabs" class="testCases.TC_001_SearchCabsTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC_003_GiftCardTest.verifyGiftCard()[pri:3, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyGiftCard" class="testCases.TC_003_GiftCardTest"/>
+        <method signature="TC_004_SendingGiftCardTest.verifyGiftCardDetails()[pri:5, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyGiftCardDetails" class="testCases.TC_004_SendingGiftCardTest"/>
+        <method signature="TC_004_SendingGiftCardTest.verifyErrorMsg()[pri:6, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyErrorMsg" class="testCases.TC_004_SendingGiftCardTest"/>
+      </group> <!-- sanity -->
+      <group name="masters">
+        <method signature="TC_002_CabsResultTest.verifyCabsResult()[pri:2, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyCabsResult" class="testCases.TC_002_CabsResultTest"/>
+        <method signature="TC_003_GiftCardTest.verifyGiftCard()[pri:3, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyGiftCard" class="testCases.TC_003_GiftCardTest"/>
+        <method signature="TC_004_SendingGiftCardTest.verifyClickingOnEmail()[pri:4, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyClickingOnEmail" class="testCases.TC_004_SendingGiftCardTest"/>
+        <method signature="TC_004_SendingGiftCardTest.verifyGiftCardDetails()[pri:5, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyGiftCardDetails" class="testCases.TC_004_SendingGiftCardTest"/>
+        <method signature="TC_004_SendingGiftCardTest.verifyErrorMsg()[pri:6, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyErrorMsg" class="testCases.TC_004_SendingGiftCardTest"/>
+        <method signature="TC_005_HotelAdultsNumberTest.verifyClickOnHotels()[pri:7, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyClickOnHotels" class="testCases.TC_005_HotelAdultsNumberTest"/>
+        <method signature="TC_005_HotelAdultsNumberTest.verifyNoForAdults()[pri:8, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifyNoForAdults" class="testCases.TC_005_HotelAdultsNumberTest"/>
+        <method signature="TC_001_SearchCabsTest.verifySearchCabs()[pri:1, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" name="verifySearchCabs" class="testCases.TC_001_SearchCabsTest"/>
+      </group> <!-- masters -->
+    </groups>
+    <test started-at="2024-02-09T00:03:42 IST" name="Test" finished-at="2024-02-09T00:04:25 IST" duration-ms="42974">
+      <class name="testCases.TC_005_HotelAdultsNumberTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:03:42 IST" name="setup" finished-at="2024-02-09T00:03:56 IST" duration-ms="13340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchCabs()[pri:1, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:03:56 IST" name="verifySearchCabs" finished-at="2024-02-09T00:04:09 IST" duration-ms="13393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchCabs -->
+        <test-method signature="verifyCabsResult()[pri:2, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:10 IST" name="verifyCabsResult" finished-at="2024-02-09T00:04:11 IST" duration-ms="1446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCabsResult -->
+        <test-method signature="verifyGiftCard()[pri:3, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:12 IST" name="verifyGiftCard" finished-at="2024-02-09T00:04:14 IST" duration-ms="2911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGiftCard -->
+        <test-method signature="verifyClickingOnEmail()[pri:4, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:15 IST" name="verifyClickingOnEmail" finished-at="2024-02-09T00:04:16 IST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnEmail -->
+        <test-method signature="verifyGiftCardDetails()[pri:5, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:16 IST" name="verifyGiftCardDetails" finished-at="2024-02-09T00:04:19 IST" depends-on-methods="testCases.TC_004_SendingGiftCardTest.verifyClickingOnEmail" duration-ms="2800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGiftCardDetails -->
+        <test-method signature="verifyErrorMsg()[pri:6, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:19 IST" name="verifyErrorMsg" finished-at="2024-02-09T00:04:19 IST" depends-on-methods="testCases.TC_004_SendingGiftCardTest.verifyGiftCardDetails" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorMsg -->
+        <test-method signature="verifyClickOnHotels()[pri:7, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:20 IST" name="verifyClickOnHotels" finished-at="2024-02-09T00:04:20 IST" duration-ms="499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnHotels -->
+        <test-method signature="verifyNoForAdults()[pri:8, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:21 IST" name="verifyNoForAdults" finished-at="2024-02-09T00:04:23 IST" depends-on-methods="testCases.TC_005_HotelAdultsNumberTest.verifyClickOnHotels" duration-ms="1915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoForAdults -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_005_HotelAdultsNumberTest@298a5e20]" started-at="2024-02-09T00:04:24 IST" name="tearDown" finished-at="2024-02-09T00:04:25 IST" duration-ms="1300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_005_HotelAdultsNumberTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
