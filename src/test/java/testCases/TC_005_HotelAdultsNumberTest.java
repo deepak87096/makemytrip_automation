@@ -1,5 +1,7 @@
 package testCases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import pageObjects.HotelsPage;
@@ -21,7 +23,7 @@ public class TC_005_HotelAdultsNumberTest extends TC_004_SendingGiftCardTest{
 	}
 	
 	@Test(priority=8, dependsOnMethods= {"verifyClickOnHotels"}, groups = {"regression", "masters"})
-	public void verifyNoForAdults() {
+	public void verifyNoForAdults() throws IOException {
 		
 		loger.info("Getting numbers for adult person...");
 		hotelpage.getAdultsNumber();

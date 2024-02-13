@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-10T18:17:16 IST" name="Suite" finished-at="2024-02-10T18:18:08 IST" duration-ms="51414">
+  <suite started-at="2024-02-13T13:03:03 IST" name="Suite" finished-at="2024-02-13T13:04:21 IST" duration-ms="78373">
     <groups>
       <group name="regression">
         <method signature="TC_002_CabsResultTest.verifyCabsResult()[pri:2, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" name="verifyCabsResult" class="testCases.TC_002_CabsResultTest"/>
@@ -28,9 +28,9 @@
         <method signature="TC_001_SearchCabsTest.verifySearchCabs()[pri:1, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" name="verifySearchCabs" class="testCases.TC_001_SearchCabsTest"/>
       </group> <!-- masters -->
     </groups>
-    <test started-at="2024-02-10T18:17:16 IST" name="Test" finished-at="2024-02-10T18:18:08 IST" duration-ms="51414">
+    <test started-at="2024-02-13T13:03:03 IST" name="Test" finished-at="2024-02-13T13:04:21 IST" duration-ms="78373">
       <class name="testCases.TC_005_HotelAdultsNumberTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:17:17 IST" name="setup" finished-at="2024-02-10T18:17:41 IST" duration-ms="23553" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:03:03 IST" name="setup" finished-at="2024-02-13T13:03:24 IST" duration-ms="20944" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,39 +46,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchCabs()[pri:1, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:17:41 IST" name="verifySearchCabs" finished-at="2024-02-10T18:17:54 IST" duration-ms="13140" status="PASS">
+        <test-method signature="verifySearchCabs()[pri:1, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:03:24 IST" name="verifySearchCabs" finished-at="2024-02-13T13:03:42 IST" duration-ms="17493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchCabs -->
-        <test-method signature="verifyCabsResult()[pri:2, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:17:54 IST" name="verifyCabsResult" finished-at="2024-02-10T18:17:56 IST" duration-ms="2236" status="PASS">
+        <test-method signature="verifyCabsResult()[pri:2, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:03:42 IST" name="verifyCabsResult" finished-at="2024-02-13T13:03:47 IST" duration-ms="4830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCabsResult -->
-        <test-method signature="verifyGiftCard()[pri:3, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:17:57 IST" name="verifyGiftCard" finished-at="2024-02-10T18:17:59 IST" duration-ms="2525" status="PASS">
+        <test-method signature="verifyGiftCard()[pri:3, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:03:47 IST" name="verifyGiftCard" finished-at="2024-02-13T13:04:05 IST" duration-ms="17723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGiftCard -->
-        <test-method signature="verifyClickingOnEmail()[pri:4, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:17:59 IST" name="verifyClickingOnEmail" finished-at="2024-02-10T18:18:00 IST" duration-ms="867" status="PASS">
+        <test-method signature="verifyClickingOnEmail()[pri:4, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:04:05 IST" name="verifyClickingOnEmail" finished-at="2024-02-13T13:04:07 IST" duration-ms="1717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickingOnEmail -->
-        <test-method signature="verifyGiftCardDetails()[pri:5, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:18:01 IST" name="verifyGiftCardDetails" finished-at="2024-02-10T18:18:03 IST" depends-on-methods="testCases.TC_004_SendingGiftCardTest.verifyClickingOnEmail" duration-ms="2279" status="PASS">
+        <test-method signature="verifyGiftCardDetails()[pri:5, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:04:08 IST" name="verifyGiftCardDetails" finished-at="2024-02-13T13:04:10 IST" depends-on-methods="testCases.TC_004_SendingGiftCardTest.verifyClickingOnEmail" duration-ms="2704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGiftCardDetails -->
-        <test-method signature="verifyErrorMsg()[pri:6, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:18:03 IST" name="verifyErrorMsg" finished-at="2024-02-10T18:18:03 IST" depends-on-methods="testCases.TC_004_SendingGiftCardTest.verifyGiftCardDetails" duration-ms="62" status="PASS">
+        <test-method signature="verifyErrorMsg()[pri:6, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:04:11 IST" name="verifyErrorMsg" finished-at="2024-02-13T13:04:11 IST" depends-on-methods="testCases.TC_004_SendingGiftCardTest.verifyGiftCardDetails" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyErrorMsg -->
-        <test-method signature="verifyClickOnHotels()[pri:7, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:18:04 IST" name="verifyClickOnHotels" finished-at="2024-02-10T18:18:04 IST" duration-ms="245" status="PASS">
+        <test-method signature="verifyClickOnHotels()[pri:7, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:04:11 IST" name="verifyClickOnHotels" finished-at="2024-02-13T13:04:11 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickOnHotels -->
-        <test-method signature="verifyNoForAdults()[pri:8, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:18:04 IST" name="verifyNoForAdults" finished-at="2024-02-10T18:18:06 IST" depends-on-methods="testCases.TC_005_HotelAdultsNumberTest.verifyClickOnHotels" duration-ms="1874" status="PASS">
+        <test-method signature="verifyNoForAdults()[pri:8, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:04:13 IST" name="verifyNoForAdults" finished-at="2024-02-13T13:04:19 IST" depends-on-methods="testCases.TC_005_HotelAdultsNumberTest.verifyClickOnHotels" duration-ms="6699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNoForAdults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-10T18:18:06 IST" name="tearDown" finished-at="2024-02-10T18:18:08 IST" duration-ms="1333" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_005_HotelAdultsNumberTest@5f049ea1]" started-at="2024-02-13T13:04:20 IST" name="tearDown" finished-at="2024-02-13T13:04:21 IST" duration-ms="1198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

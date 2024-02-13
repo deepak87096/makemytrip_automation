@@ -30,9 +30,6 @@ public class TC_001_SearchCabsTest extends BaseClass {
 		CabsPage cabspage = new CabsPage(driver, mywait);
 		
 		
-		
-		
-		
 		//clicking on Cabs in homepage
 		homepage.clickCabs();
 		loger.info("Clicked on Cabs from menu");

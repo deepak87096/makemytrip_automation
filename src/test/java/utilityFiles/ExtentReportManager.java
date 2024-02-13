@@ -1,5 +1,8 @@
 package utilityFiles;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -17,14 +20,17 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import testBase.BaseClass;
 
 public class ExtentReportManager extends BaseClass implements ITestListener{
-	public ExtentSparkReporter sparkReporter;  // UI of the report
-	public ExtentReports extent;  //populate common info on the report
-	public ExtentTest test; // creating test case entries in the report and update status of the test methods
+	public ExtentSparkReporter sparkReporter;  
+	public ExtentReports extent;  
+	public ExtentTest test; 
+	public String repName;
 
 	public void onStart(ITestContext context) {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
-		String repName = "Test-Report-" + timeStamp + ".html";
-		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report	
+		repName = "Test-Report-" + timeStamp + ".html";
+		
+		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
+		
 		sparkReporter.config().setDocumentTitle("Automation Report"); // TiTle of report
 		sparkReporter.config().setReportName("Functional Testing"); // name of the report
 		sparkReporter.config().setTheme(Theme.DARK);				// Theme of the report 
@@ -34,8 +40,9 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 		
 		extent.setSystemInfo("Computer Name","LTIN233400"); 
 		extent.setSystemInfo("Application", "makemytrip");
-		extent.setSystemInfo("os","Windows11");
-		extent.setSystemInfo("Browser name","Chrome,Edge");
+//		extent.setSystemInfo("os","Windows11");
+		extent.setSystemInfo("os",context.getCurrentXmlTest().getParameter("os"));
+		extent.setSystemInfo("Browser name",context.getCurrentXmlTest().getParameter("browser"));
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environment","QA");
 		
@@ -90,6 +97,15 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public void onFinish(ITestContext context) {
 		
 		extent.flush();
+		
+		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
+		File extentReport = new File(pathOfExtentReport);
+		try {
+			Desktop.getDesktop().browse(extentReport.toURI()); //Immediately it will open the report after test execution
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 		
 }

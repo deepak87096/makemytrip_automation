@@ -1,9 +1,13 @@
 package pageObjects;
 
+import java.io.IOException;
+
 //import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import utilityFiles.ExcelUtils;
 
 
 public class SendingGiftCardPage extends BasePage {
@@ -12,10 +16,9 @@ public class SendingGiftCardPage extends BasePage {
 		super(driver);
 	}
 	
-	//Locators:--------------->
+	
 	//Locator of E-mail
 	@FindBy(xpath="//span[text()='E-Mail']")
-//	@FindBy(xpath="//p[@class='font16 lato-black append-bottom10 hrtl-center append-top5']")
 	WebElement email_loc;
 	
 	
@@ -50,9 +53,7 @@ public class SendingGiftCardPage extends BasePage {
 	@FindBy(xpath="(//p[@class='red-text font11 append-top5'])[2]")
 	WebElement sender_email_error_msg;
 	
-	//Action Methods:---------------->
-	
-//	JavascriptExecutor js = (JavascriptExecutor) driver;
+
 	
 	//clicking on E-Mail
 	public void clickOnEmail() throws InterruptedException {
@@ -79,9 +80,14 @@ public class SendingGiftCardPage extends BasePage {
 		btn_buynow.click();
 	}
 	
-	public void getErrorMessage() {
-		System.out.println(receipient_email_error_msg.getText());
-		System.out.println(sender_email_error_msg.getText());
+	public void getErrorMessage() throws IOException {
+		String receiver_error_msg = receipient_email_error_msg.getText();
+		String sender_error_msg = sender_email_error_msg.getText();
+		System.out.println(receiver_error_msg);
+		System.out.println(sender_error_msg);
+		ExcelUtils.setCellData("Sheet1",1,2,"Receiver's Error msg: "+ receiver_error_msg);
+		ExcelUtils.setCellData("Sheet1",2,2,"Sender's Error msg: "+ sender_error_msg);
+		
 	}
 	
 

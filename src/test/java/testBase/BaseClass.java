@@ -41,6 +41,7 @@ public class BaseClass {
 		p=new Properties();
 		p.load(file);
 		loger=LogManager.getLogger(this.getClass());
+		
 		if(p.getProperty("execution_env").equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities=new DesiredCapabilities();
 			//os
@@ -59,24 +60,30 @@ public class BaseClass {
 			
 			//browser
 			switch(br.toLowerCase()) {
-			case "chrome":capabilities.setBrowserName("chrome");
-			break;
-			case "edge":capabilities.setBrowserName("MicrosoftEdge");
-			break;
-			default: System.out.println("No matching browser");
-			return;
-		}
+			case "chrome":
+				capabilities.setBrowserName("chrome");
+				break;
+			case "edge":
+				capabilities.setBrowserName("MicrosoftEdge");
+				break;
+			default: 
+				System.out.println("No matching browser");
+				return;
+			}
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 		}
 		else if(p.getProperty("execution_env").equalsIgnoreCase("local")) {
 			// Locally
 			switch(br.toLowerCase()) {
-			case "chrome":driver=new ChromeDriver();
-			break;
-			case "edge":driver=new EdgeDriver();
-			break;
-			default: System.out.println("No matching browser");
-			return;
+			case "chrome":
+				driver=new ChromeDriver();
+				break;
+			case "edge":
+				driver=new EdgeDriver();
+				break;
+			default: 
+				System.out.println("No matching browser");
+				return;
 			}
 		}
 		//driver=(WebDriver) new ChromeDriver();

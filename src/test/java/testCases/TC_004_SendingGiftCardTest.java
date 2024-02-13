@@ -1,5 +1,7 @@
 package testCases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import pageObjects.SendingGiftCardPage;
@@ -25,7 +27,7 @@ public class TC_004_SendingGiftCardTest extends TC_003_GiftCardTest{
 	}
 	
 	@Test(priority=6, dependsOnMethods= {"verifyGiftCardDetails"}, groups = {"sanity", "masters"})
-	public void verifyErrorMsg() {
+	public void verifyErrorMsg() throws IOException {
 		
 		loger.info("Getting error message for invalid emails...");
 		sendgift.getErrorMessage();

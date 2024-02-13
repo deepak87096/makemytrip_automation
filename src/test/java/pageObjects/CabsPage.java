@@ -3,18 +3,14 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
-//import org.openqa.selenium.JavascriptExecutor;
-//import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
-//import org.openqa.selenium.Keys;
-//
-//import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.interactions.Actions;
+
 
 
 public class CabsPage extends BasePage{
@@ -47,31 +43,21 @@ public class CabsPage extends BasePage{
 	String meredian2 = "']";
 	
 	
-	
-	//Locators:
 	//Locating Outstation One-Way Radio button
 	@FindBy(xpath="//li[@data-cy='outstationOneWay']")
 	WebElement radiobtn_onewayoutstation; //later make all these variable private
 	
-	//Locating from-input-box container
-//	@FindBy(xpath="//div[@class='csw_inputBox searchCity increaseHeight']")
-//	WebElement inputbox_source;
 	
 	//Locating from-input-box
-//	@FindBy(xpath="//input[@placeholder='From']")
 	@FindBy(id="fromCity")
 	WebElement txt_sourcecity;
 	
-	//Locating from-input-box-suggestion
-//	@FindBy(xpath="//span[@class='sr_city blackText' and contains(text(), 'Delhi')]")
-//	WebElement option_sourcecity;
 	
 	//Locating destination-input-box
 	@FindBy(xpath="//input[@placeholder='To']")
 	WebElement txt_destcity;
 	
 	//Locating destination-input-box suggestion
-//	@FindBy(xpath="//span[@class='sr_city blackText' and starts-with(text(), 'Manali, Himachal Pradesh')]")
 	@FindBy(xpath="//li[@id='react-autowhatever-1-section-0-item-0']")
 	WebElement option_destcity;
 	
@@ -79,19 +65,7 @@ public class CabsPage extends BasePage{
 	@FindBy(xpath="//div[@class='DayPicker-Caption']/div")
 	List<WebElement> date_monthandyear;
 	
-	//for date in calendar
-//	@FindBy(xpath="//div[@class='DayPicker-Month'][1]//div[@aria-disabled='false' and text()='"+date+"']")
-//	WebElement date;
-	
-	//Locating dates from month-//div[@class='DayPicker-Month']/div[@class='DayPicker-Body']
-//	@FindBy(xpath="//div[@class='DayPicker-Body']")
-//	@FindBy(xpath="//div[@class='DayPicker-Month'][1]//div[@aria-disabled='false']")
-//	List<WebElement> dates_firstmonth;
-	//div[@class='DayPicker-Month'][1]//div[@aria-disabled='false']
-	
-//	@FindBy(xpath="//div[@class='DayPicker-Month'][2]//div[@aria-disabled='false']")
-//	List<WebElement> dates_secondmonth;
-//	
+
 	//Next month button in calendar
 	@FindBy(xpath="//span[@class='DayPicker-NavButton DayPicker-NavButton--next']")
 	WebElement btn_nextmonth;
@@ -108,9 +82,7 @@ public class CabsPage extends BasePage{
 	@FindBy(xpath="//p[@class='font28 latoBlack blackText ']")
 	WebElement txt_lowestprice;
 	
-	
-	//=========================================================
-	//Action Methods:
+
 	
 	//For-Source city------>
 	//Entering value in from textbox
@@ -133,7 +105,6 @@ public class CabsPage extends BasePage{
 	public void selectDestCityFromSuggestion() throws InterruptedException {
 		Thread.sleep(3000);
 		option_destcity.click();
-		
 		
 	}
 	

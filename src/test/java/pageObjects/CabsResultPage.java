@@ -1,9 +1,13 @@
 package pageObjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import utilityFiles.ExcelUtils;
 
 public class CabsResultPage extends BasePage {
 	
@@ -15,13 +19,12 @@ public class CabsResultPage extends BasePage {
 	String cartype1 = "//label[text()='";
 	String cartype2 = "']";
 
-	//Locators:----------------->
 	
 	//car price locator
 	@FindBy(xpath="//p[@class='font28 latoBlack blackText ']")
 	WebElement txt_lowestprice;
 	
-	//Actions Methods:--------------->
+
 	
 	//clicking on SUV
 	public void clickOnSUV(String cabtype) {
@@ -29,8 +32,9 @@ public class CabsResultPage extends BasePage {
 	}
 		
 	//getting lowest price among searched cab
-	public void getLowestPrice() {
+	public void getLowestPrice() throws IOException {
 		String lowestprice = txt_lowestprice.getText();
 		System.out.println(lowestprice);
+		ExcelUtils.setCellData("Sheet1",1,0,lowestprice);
 	}
 }
