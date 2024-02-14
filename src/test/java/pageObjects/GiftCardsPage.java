@@ -2,18 +2,24 @@ package pageObjects;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utilityFiles.ExcelUtils;
 
 public class GiftCardsPage extends BasePage{
+	
+	WebDriverWait mywait;
 
-	public GiftCardsPage(WebDriver driver) {
+	public GiftCardsPage(WebDriver driver, WebDriverWait mywait) {
 		super(driver);
+		this.mywait = mywait;
 	}
 	
 	
@@ -30,6 +36,8 @@ public class GiftCardsPage extends BasePage{
 	@FindBy(xpath="//h3[@class='lato-black black-text' and text()='Wedding Gift Card']")
 	WebElement txt_giftcard;
 	
+	String result_giftcardimg = "//img[contains(@src,'giftcard-12012023.png')]";
+	
 	
 	Actions act = new Actions(driver);
 	
@@ -45,5 +53,6 @@ public class GiftCardsPage extends BasePage{
 		}
 		ExcelUtils.setCellData("Sheet1",1,1,txt_giftcard.getText());
 		txt_giftcard.click();
+		mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(result_giftcardimg)));
 	}
 }

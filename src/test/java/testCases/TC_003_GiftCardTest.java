@@ -12,7 +12,7 @@ public class TC_003_GiftCardTest extends TC_002_CabsResultTest{
 		
 		try {
 		
-		GiftCardsPage giftcard = new GiftCardsPage(driver);
+		GiftCardsPage giftcard = new GiftCardsPage(driver, mywait);
 		
 		
 		//clicking on 'GiftCards' option from More dropdown in menu
@@ -22,6 +22,7 @@ public class TC_003_GiftCardTest extends TC_002_CabsResultTest{
 		//selecting 'Wedding GiftCard' from Group of giftcards
 		giftcard.selectGiftCard();
 		loger.info("Selected wedding giftcard from group of giftcards...");
+		
 		}
 		catch (Exception e) {
 			loger.error("Test Failed!");

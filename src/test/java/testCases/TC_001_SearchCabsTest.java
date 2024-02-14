@@ -17,13 +17,13 @@ public class TC_001_SearchCabsTest extends BaseClass {
 		
 		try {
 			
-		String sourceCity = "Delhi";
-		String destCity = "Manali";
-		String pickupdate = "28";
-		String monthandyear = "February 2024";
-		String hour = "06";
-		String minute = "30";
-		String meredian = "AM";
+		String sourceCity = p.getProperty("fromCity");
+		String destCity = p.getProperty("destCity");
+		String pickupdate = p.getProperty("pickupdate");
+		String monthandyear = p.getProperty("monthandyear");
+		String hour = p.getProperty("hour");
+		String minute = p.getProperty("minute");
+		String meredian = p.getProperty("meredian");
 		
 	
 		HomePage homepage = new HomePage(driver);

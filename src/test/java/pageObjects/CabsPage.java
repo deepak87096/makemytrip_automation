@@ -1,5 +1,6 @@
 package pageObjects;
 
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -42,6 +43,8 @@ public class CabsPage extends BasePage{
 	String meredian1 = "//span[contains(@class,'meridianSlotItemChild') and text()='";
 	String meredian2 = "']";
 	
+	String result_carimg = "(//div[@class='cabImage makeRelative'])[1]";
+	
 	
 	//Locating Outstation One-Way Radio button
 	@FindBy(xpath="//li[@data-cy='outstationOneWay']")
@@ -82,12 +85,13 @@ public class CabsPage extends BasePage{
 	@FindBy(xpath="//p[@class='font28 latoBlack blackText ']")
 	WebElement txt_lowestprice;
 	
-
+	
 	
 	//For-Source city------>
 	//Entering value in from textbox
 	public void setSourceCity(String fromcity) {
-		txt_sourcecity.sendKeys(fromcity);	
+		txt_sourcecity.sendKeys(fromcity);
+		
 	}
 	
 	//Selecting option from suggestion
@@ -152,6 +156,7 @@ public class CabsPage extends BasePage{
 	//clicking on search button
 	public void clickOnSearch() {
 		btn_search.click();
+		mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(result_carimg)));
 	}
 	
 	

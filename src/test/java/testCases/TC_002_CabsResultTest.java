@@ -13,7 +13,7 @@ public class TC_002_CabsResultTest extends TC_001_SearchCabsTest {
 		loger.info("***** Starting TC_002_CabsResultPage *****");
 		
 		try {
-		String cabtype = "SUV";
+		String cabtype = p.getProperty("cabtype");
 		
 		CabsResultPage cabsresult = new CabsResultPage(driver);
 		

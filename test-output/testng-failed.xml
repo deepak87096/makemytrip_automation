@@ -10,9 +10,15 @@
     <classes>
       <class name="testCases.TC_005_HotelAdultsNumberTest">
         <methods>
+          <include name="verifyCabsResult"/>
+          <include name="verifyClickingOnEmail"/>
           <include name="tearDown"/>
+          <include name="verifyGiftCard"/>
+          <include name="verifySearchCabs"/>
+          <include name="verifyGiftCardDetails"/>
           <include name="verifyNoForAdults"/>
           <include name="setup"/>
+          <include name="verifyErrorMsg"/>
           <include name="verifyClickOnHotels"/>
         </methods>
       </class> <!-- testCases.TC_005_HotelAdultsNumberTest -->
