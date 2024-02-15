@@ -37,7 +37,7 @@ Integrate Jenkins with version controller (GIT) and scheduled builds to run auto
 # Selenium Automation Testing Project: Book one way outstation cab and display the lowest charges
  
 ## Project Overview
-This Selenium automation testing project focuses on automating tasks on ZigWheels.com
+This Selenium automation testing project focuses on automating tasks on makemytrip.com
 The primary objectives include capturing user information, navigating through the portal, verifying the presence of specific elements. 
 The project uses various dependencies and libraries to facilitate automation.
 
